@@ -36,6 +36,7 @@ function validation(event) {
         missMail.style.color = 'red';
         mail.style.borderColor= 'red';
     }
+
     //Si le champ message est vide
     if (message.value.length === 0){
         event.preventDefault();
@@ -43,6 +44,8 @@ function validation(event) {
         missMessage.style.color = 'red';
         message.style.borderColor= 'red';
     }
+
+    //Si le champ genre est vide
     if (sexe1.checked === false && sexe2.checked === false) {
         event.preventDefault();
         missSelectSexe.textContent = 'Genre manquant';

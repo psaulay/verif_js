@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Formulaire</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
     </head>
-
     <body>
         <br>
         <h2>FORMULAIRE</h2>
-
         <div class="container">
             <form name="formulaire" method="post">
                 <div class="row">
-                    <div class="nom col-6">
+                    <div class="nom col-lg-6 col-12">
                         <p>Nom:</p><br>
                         <input type="text" name="nom" id="nom" placeholder="Votre nom">
                         <span id='missNom'></span><br>
                     </div>
-                    <div class="radio col-6" id="sexe" required >
+                    <div class="radio col-lg-6 col-12" id="sexe" required >
                         <p>Genre:</p><br>
                         <input type="radio" id="sexe1" name="sexe" value="Mme">
                         <label for="sexe1">Mme</label>
@@ -30,12 +27,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12">
                         <p>Prénom:</p><br>
                         <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" >
                         <span id='missPrenom'></span><br>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-12">
                         <p>Adresse email:</p><br>
                         <input type="email" name="mail" id="mail" placeholder="Votre adresse email">
                         <span id='missMail'></span><br>
@@ -45,7 +42,6 @@
                     <p>Message:</p>
                     <input class="message" type="text" name="message" id="message" placeholder="Votre message">
                     <span id='missMessage'></span>
-
                 </div>
                 <br><br>
                 <div class="row justify-content-center">
@@ -63,5 +59,4 @@
         </div>
         <script type="text/javascript" src="../js/script.js"></script>
     </body>
-
 </html>
